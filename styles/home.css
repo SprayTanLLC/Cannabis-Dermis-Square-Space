@@ -1,0 +1,46 @@
+html, body {
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.connect {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 0;
+    color: slategray;
+    font-family: 'Lato', sans-serif;
+}
+
+.social-icons {
+    color: black;
+    font-size: 1.75rem;
+}
+
+.email-right {
+    margin: 0;
+    padding: 0;
+    color: black;
+    margin-right: 2rem;
+}
+.canderm-nav {
+    width: 100%;
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    justify-content: space-evenly;
+}
+.candern-nav {
+    justify-content: space-between;
+}
+.navbar-brand img {
+    width: 10rem;
+    height: auto;
+}
+.slider .item {
+    height: 400px;
+    
+}

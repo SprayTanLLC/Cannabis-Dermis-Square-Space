@@ -8,29 +8,80 @@
     {squarespace-headers}
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
+        <div class="connect">
+        <div class="social-icons">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+        <p class="email-right align-middle">Hello@CannabisDermis@gmail.com<i class="fas fa-shopping-cart"></i></p>
+    </div>
+    <hr>
+    <!-- Navbar Sticky top -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand mr-0" href="#"><img src="./Resources/Logo.png" alt=""></a>
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 canderm-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">SHOP<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">PRODUCTS</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Q&A</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">BLOG</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">CART</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img class="d-block w-100"
+                    src="https://images.unsplash.com/photo-1576426863848-c21f53c60b19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                    alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100"
+                    src="https://images.unsplash.com/photo-1575249142951-35b95b9bb5b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100"
+                    src="https://images.unsplash.com/photo-1576426863848-c21f53c60b19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                    alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
-    <div class="site-container">
 
-      <header class="site-header">
-        <!-- site navigation -->
-        <squarespace:navigation navigationId="siteNav" template="site-navigation" />
 
-        <!-- site title or logo -->
-        {.section website}
-          <h1 class="site-title-heading" data-content-field="site-title">
-            <a href="/" class="site-title-link">{siteTitle}</a>
-          </h1>
-        {.end}
-      </header>
 
-      <!-- cms content injection point -->
-      <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
-       {squarespace.main-content}
-      </main>
-
-      <div>
-      <button id="jquery-button">Click to see if Jquery works</button>
-      </div>
 
       <!--Footer with open block field -->
       <footer class="site-footer">
@@ -41,13 +92,9 @@
 
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="home.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+    <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
     <!-- other scripts, and footer code injection -->
     {squarespace-footers}
-    <script>
-    $('#jquery-button').click(function(){
-      alert("it works")
-    });
-    </script>
   </body>
 </html>
