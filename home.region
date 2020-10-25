@@ -9,8 +9,29 @@
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
 
-    <div>
-    <canvas id="canvas" width="300" height="300"></canvas>
+    <div class="site-container">
+
+      <header class="site-header">
+        <!-- site navigation -->
+        <squarespace:navigation navigationId="siteNav" template="site-navigation" />
+
+        <!-- site title or logo -->
+        {.section website}
+          <h1 class="site-title-heading" data-content-field="site-title">
+            <a href="/" class="site-title-link">{siteTitle}</a>
+          </h1>
+        {.end}
+      </header>
+
+      <!-- cms content injection point -->
+      <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
+       {squarespace.main-content}
+      </main>
+
+      <div>
+      <button id="jquery-button">Click to see if Jquery works</button>
+      </div>
+
       <!--Footer with open block field -->
       <footer class="site-footer">
         <squarespace:block-field id="footerBlocks" columns="12" />
@@ -20,9 +41,13 @@
 
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
-    <squarespace:script src="home.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
     <!-- other scripts, and footer code injection -->
     {squarespace-footers}
+    <script>
+    $('#jquery-button').click(function(){
+      alert("it works")
+    });
+    </script>
   </body>
 </html>
