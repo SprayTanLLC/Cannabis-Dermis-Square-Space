@@ -9,27 +9,11 @@
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
 
-    <div class="site-container">
+    <div>
 
-      <header class="site-header">
-        <!-- site navigation -->
-        <squarespace:navigation navigationId="siteNav" template="site-navigation" />
-
-        <!-- site title or logo -->
-        {.section website}
-          <h1 class="site-title-heading" data-content-field="site-title">
-            <a href="/" class="site-title-link">{siteTitle}</a>
-          </h1>
-        {.end}
+      <header>
       </header>
-
-      <!-- cms content injection point -->
-      <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
-       {squarespace.main-content}
-       <button id="jquery-button">Click to see if J Query works!</button>
-      </main>
-
-      <!--Footer with open block field -->
+    
       <footer class="site-footer">
         <squarespace:block-field id="footerBlocks" columns="12" />
       </footer>
