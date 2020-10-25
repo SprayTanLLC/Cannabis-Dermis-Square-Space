@@ -1,6 +1,7 @@
 html, body {
     font-family: 'Cabin Condensed', sans-serif;
     font-size: 16px;
+    font-weight: 500;
     box-sizing: border-box;
 }
 .connect {
