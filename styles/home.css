@@ -54,3 +54,32 @@ hr {
     height: 400px;
     
 }
+
+.asi {
+    height: 10rem;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.four-pictures div {
+    padding: 0;
+}
+.four-pictures img {
+    width: 100%;
+    height: auto;
+
+}
+.inner {
+    overflow: hidden;
+}
+.inner img {
+    transition: all 1s ease-in-out;
+}
+
+.inner:hover img {
+    transform: scale(1.25);   
+}

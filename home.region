@@ -82,7 +82,33 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-
+     <div class="container-fluid asi d-flex align-items-center justify-content-center">
+        <div class="row">
+            <div class="col-sm">
+                <h1>AS SEEN IN</h1>
+            </div>
+        </div>
+    </div>
+       <div class="container-fluid four-pictures">
+        <div class="row">
+            <div class="col-sm inner">
+                <img class="img-fluid"
+                    src="https://images.unsplash.com/photo-1571115637015-f572abdfc43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80">
+            </div>
+            <div class="col-sm inner">
+                <img
+                    src="https://images.unsplash.com/photo-1571115637015-f572abdfc43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80">
+            </div>
+            <div class="col-sm inner">
+                <img
+                    src="https://images.unsplash.com/photo-1595284843439-f963be7ed526?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80">
+            </div>
+            <div class="col-sm inner">
+                <img
+                    src="https://images.unsplash.com/photo-1595284843439-f963be7ed526?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80">
+            </div>
+        </div>
+    </div>
       <!--Footer with open block field -->
       <footer class="site-footer">
         <squarespace:block-field id="footerBlocks" columns="12" />
