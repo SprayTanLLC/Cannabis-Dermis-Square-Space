@@ -1,0 +1,56 @@
+html, body {
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+/* line break between top two navbars */
+hr {
+    padding: 0;
+    margin-top: .5rem;
+    margin-bottom: 0;
+}
+/* top left socail media icons */
+.social-icons {
+    color: black;
+    font-size: 1.75rem;
+}
+
+.connect {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 0;
+    color: slategray;
+    font-family: 'Lato', sans-serif;
+}
+/* email address on top right */
+.email-right {
+    margin: 0;
+    padding: 0;
+    color: black;
+    margin-right: 2rem;
+}
+/* Navigation Links */
+.canderm-nav {
+    width: 100%;
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#cd-logo {
+  margin: 0 auto;
+  padding: 0;
+  width: 10%;
+  height: auto;
+}
+
+/* Carousel Image Items */
+.slider .item {
+    height: 400px;
+    
+}
