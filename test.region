@@ -9,8 +9,7 @@
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
 
-    <div>
-    <canvas id="canvas" width="300" height="300"></canvas>
+    
       <!--Footer with open block field -->
       <footer class="site-footer">
         <squarespace:block-field id="footerBlocks" columns="12" />
