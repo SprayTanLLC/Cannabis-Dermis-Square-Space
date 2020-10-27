@@ -43,6 +43,7 @@
 
     <!-- other scripts, and footer code injection -->
     {squarespace-footers}
+    <script>console.log({@|json-pretty})</script>
     <script>
     $('#jquery-button').click(function(){
       alert("it works")
