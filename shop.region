@@ -34,7 +34,7 @@
                     <a class="nav-link" href="/shop">SHOP</a>
                 </li>
                 <li class="nav-item active" id="cd-link">
-                    <a class="nav-link" href="/products">PRODUCTS</a>
+                    <a class="nav-link" href="/our-products">OUR PRODUCTS</a>
                 </li>
                 <li class="nav-item active" id="cd-link">
                     <a class="nav-link" href="#">CBD</a>
@@ -55,25 +55,7 @@
         </div>
     </nav>
       <!-- cms content injection point -->
-     <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
-       {squarespace.main-content}
-      </main>
-      <div class="repeated-products">
-      {.repeated section items}
-        <div class="product-container">
-            <div>
-                <img src="{assetUrl}">
-            </div>
-            <div>
-            <a href="{fullUrl}">
-                <p>{title}</p>
-                <p>${priceMoney.value}</p>
-            </a>
-            </div>
-        </div>
-      {.end}
-      </div>
-      
+    {squarespace.main-content}
 
       <!--Footer with open block field -->
       <footer class="site-footer">

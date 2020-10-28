@@ -1,0 +1,15 @@
+
+
+<div class="container-fluid repeated-products">
+     {.repeated section items}
+      <a href="{fullUrl}">
+        <div class="row">
+            <div class="col-sm text-center">
+                <img src="{assetUrl}" class="img-fluid">
+                <p>{title}</p>
+                <p>$30.00</p>
+            </div>
+        </div>
+        </a>
+    {.end} 
+    </div>
