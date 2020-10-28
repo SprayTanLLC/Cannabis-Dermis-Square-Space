@@ -55,14 +55,18 @@
         </div>
     </nav>
       <!-- cms content injection point -->
-      <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
-       {squarespace.main-content}
-      </main>
+     
       <div class="item-box">
         <img src="{items.0.items.0.assetUrl}">
-        <img src="{items.1.items.0.assetUrl}">
+        <p>{items.0.title}<p>
+        <p>Price: {items.0.priceMoney.value}</p>
       </div>
-
+      <div class="item-box">
+        <img src="{items.1.items.0.assetUrl}">
+        <p>{items.1.title}<p>
+        <p>Price: {items.1.priceMoney.value}</p>
+      </div>
+        <button id="jquery-button">click to see</button>
       <!--Footer with open block field -->
       <footer class="site-footer">
         <squarespace:block-field id="footerBlocks" columns="12" />
@@ -72,7 +76,7 @@
 
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
-    <squarespace:script src="products.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+    <squarespace:script src="shop.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
     <!-- other scripts, and footer code injection -->
     {squarespace-footers}
