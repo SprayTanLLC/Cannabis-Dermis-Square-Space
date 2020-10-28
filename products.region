@@ -61,7 +61,6 @@
       <div class="item-box">
         <img src="{items.0.items.0.assetUrl}">
         <img src="{items.1.items.0.assetUrl}">
-        
       </div>
 
       <!--Footer with open block field -->

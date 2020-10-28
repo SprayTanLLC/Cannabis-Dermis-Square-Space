@@ -8,11 +8,7 @@
     {squarespace-headers}
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
-
-    <div>
-      <!-- cms content injection point -->
-      <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
-        <div class="connect">
+      <div class="connect">
         <div class="social-icons">
             <i class="fab fa-twitter"></i>
             <i class="fab fa-facebook"></i>
@@ -22,8 +18,7 @@
         <p class="email-right align-middle">Hello@CannabisDermis@gmail.com<i class="fas fa-shopping-cart"></i></p>
     </div>
     <hr>
-    <!-- Navbar Sticky top -->
-    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-white p-4">
+      <nav class="navbar sticky-top navbar-expand-md navbar-light bg-white p-4">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
             aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -59,10 +54,15 @@
             </ul>
         </div>
     </nav>
-    <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
+      <!-- cms content injection point -->
+      <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
        {squarespace.main-content}
-       
-    </main>
+      </main>
+      <div class="item-box">
+        <img src="{items.0.items.0.assetUrl}">
+        <img src="{items.1.items.0.assetUrl}">
+        
+      </div>
       <!--Footer with open block field -->
       <footer class="site-footer">
         <squarespace:block-field id="footerBlocks" columns="12" />
@@ -71,9 +71,17 @@
     </div>
 
     <!-- combo and minify scripts when not logged in -->
-    <squarespace:script src="shop.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+    <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+    <squarespace:script src="products.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
     <!-- other scripts, and footer code injection -->
     {squarespace-footers}
+    <script>console.log({@|json-pretty})</script>
+    <script>console.log("hi")</script>
+    <script>
+    $('#jquery-button').click(function(){
+      alert("it works")
+    });
+    </script>
   </body>
 </html>
