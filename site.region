@@ -28,9 +28,6 @@
        {squarespace.main-content}
       </main>
 
-      <div>
-      <button id="jquery-button">Click to see if Jquery works</button>
-      </div>
 
       <!--Footer with open block field -->
       <footer class="site-footer">

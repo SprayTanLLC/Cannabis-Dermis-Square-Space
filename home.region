@@ -29,16 +29,16 @@
             <a class="navbar-brand mr-0" href="#"><img src="logo.png" alt=""></a>
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0 canderm-nav">
                 <li class="nav-item active" id="cd-link">
-                    <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/home">HOME<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active" id="cd-link">
-                    <a class="nav-link" href="#">SHOP</a>
+                    <a class="nav-link" href="/shop">SHOP</a>
+                </li>
+                <li class="nav-item active" id="cd-link">
+                    <a class="nav-link" href="/products">PRODUCTS</a>
                 </li>
                 <li class="nav-item active" id="cd-link">
                     <a class="nav-link" href="#">CBD</a>
-                </li>
-                <li class="nav-item active" id="cd-link">
-                    <a class="nav-link" href="#">CBG</a>
                 </li>
                 <li class="nav-item active" id="cd-link">
                     <a class="nav-link" href="#">SALVES</a>

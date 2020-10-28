@@ -12,10 +12,6 @@
     <div class="site-container">
 
       <header class="site-header">
-        <!-- site navigation -->
-        <squarespace:navigation navigationId="siteNav" template="site-navigation" />
-
-        <!-- site title or logo -->
         {.section website}
           <h1 class="site-title-heading" data-content-field="site-title">
             <a href="/" class="site-title-link">{siteTitle}</a>
@@ -26,7 +22,6 @@
       <!-- cms content injection point -->
       <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
        {squarespace.main-content}
-       <h1>this is the main content section</h1>
       </main>
     
 
