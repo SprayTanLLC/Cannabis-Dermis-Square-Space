@@ -1,0 +1,13 @@
+.repeated-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-container {
+    text-align: center;
+}
+.repeated-products img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}

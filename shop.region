@@ -58,17 +58,23 @@
      <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
        {squarespace.main-content}
       </main>
-      <div class="item-box">
-        <img src="{items.0.items.0.assetUrl}">
-        <p>{items.0.title}<p>
-        <p>Price: {items.0.priceMoney.value}</p>
+      <div class="repeated-products">
+      {.repeated section items}
+        <div class="product-container">
+            <div>
+                <img src="{assetUrl}">
+            </div>
+            <div>
+            <a href="{fullUrl}">
+                <p>{title}</p>
+                <p>${priceMoney.value}</p>
+            </a>
+            </div>
+        </div>
+      {.end}
       </div>
-      <div class="item-box">
-        <img src="{items.1.items.0.assetUrl}">
-        <p>{items.1.title}<p>
-        <p>Price: {items.1.priceMoney.value}</p>
-      </div>
-        <button id="jquery-button">click to see</button>
+      
+
       <!--Footer with open block field -->
       <footer class="site-footer">
         <squarespace:block-field id="footerBlocks" columns="12" />

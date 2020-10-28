@@ -122,5 +122,6 @@
 
     <!-- other scripts, and footer code injection -->
     {squarespace-footers}
+    <script>console.log({@|json-pretty})</script>
   </body>
 </html>
