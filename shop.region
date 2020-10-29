@@ -24,10 +24,7 @@
       </header>
 
       <!-- cms content injection point -->
-      <main class="content-container" role="main" data-content-field="main-content">
-       {squarespace.main-content}
-       <h1>hello<h1>
-      </main>
+   <h1>hello</h1>
 
 
       <!--Footer with open block field -->
