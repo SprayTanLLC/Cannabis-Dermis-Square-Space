@@ -55,8 +55,9 @@
         </div>
     </nav>
       <!-- cms content injection point -->
-    {squarespace.main-content}
-
+      <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
+       {squarespace.main-content}
+      </main>
       <!--Footer with open block field -->
       <footer class="site-footer">
         <squarespace:block-field id="footerBlocks" columns="12" />
