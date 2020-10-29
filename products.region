@@ -1,3 +1,12 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- include system scripts, page meta, and header code injection -->
+    {squarespace-headers}
+  </head>
 <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
    <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
        {squarespace.main-content}
@@ -5,7 +14,7 @@
     <h1>Maybe</h1>
   
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
-    <squarespace:script src="test.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+    <squarespace:script src="products.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
     <script>console.log({@|json-pretty})</script>
   </body>
