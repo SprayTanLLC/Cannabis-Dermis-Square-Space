@@ -8,22 +8,6 @@
     {squarespace-headers}
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
-    <squarespace:query collection="products">
-      <script>console.log({@|json-pretty})</script>
-      <div class="container-fluid repeated-products">
-      {.repeated section items}
-      <a href="{fullUrl}">
-        <div class="row">
-            <div class="col-sm text-center">
-                <img src="{assetUrl}" class="img-fluid">
-                <p>{title}</p>
-                <p>$30.00</p>
-            </div>
-        </div>
-        </a>
-      {.end} 
-      </div>
-    </squarespace:query>
 
   <div class="sqs-block product-block sqs-block-product" data-block-type="43" id="block-yui_3_17_2_1_1603931557443_5003"><div class="sqs-block-content" id="yui_3_17_2_1_1603932610194_110">
     <div class="product-block  clear" data-product-type="1" id="yui_3_17_2_1_1603932610194_109">
@@ -46,13 +30,6 @@
       </div>
     </div>
   </div>
-      <!--Footer with open block field -->
-      <footer class="site-footer">
-        <squarespace:block-field id="footerBlocks" columns="12" />
-      </footer>
-
-    </div>
-
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
     <squarespace:script src="test.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />

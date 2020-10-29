@@ -1,11 +1,11 @@
 .repeated-products {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .repeated-products img {
     width: 300px;
     height: 300px;
+    object-fit: cover;
 }
 .abcd {
     display: none;

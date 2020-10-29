@@ -3,70 +3,29 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-
     <!-- include system scripts, page meta, and header code injection -->
     {squarespace-headers}
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
-      <div class="connect">
-        <div class="social-icons">
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-pinterest"></i>
-            <i class="fab fa-instagram"></i>
+      <squarespace:query collection="products">
+      <script>console.log({@|json-pretty})</script>
+      <div class="container-fluid repeated-products justify-content-center">
+      {.repeated section items}
+      <a href="{fullUrl}">
+        <div class="row">
+            <div class="col-sm text-center">
+                <img src="{assetUrl}" class="img-fluid">
+                <p>{title}</p>
+                <p>$30.00</p>
+            </div>
         </div>
-        <p class="email-right align-middle">Hello@CannabisDermis@gmail.com<i class="fas fa-shopping-cart"></i></p>
-    </div>
-    <hr>
-      <nav class="navbar sticky-top navbar-expand-md navbar-light bg-white p-4">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <img id="cd-logo" src={collection.mainImage.assetUrl}>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand mr-0" href="#"><img src="logo.png" alt=""></a>
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 canderm-nav">
-                <li class="nav-item active" id="cd-link">
-                    <a class="nav-link" href="/home">HOME<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active" id="cd-link">
-                    <a class="nav-link" href="/shop">SHOP</a>
-                </li>
-                <li class="nav-item active" id="cd-link">
-                    <a class="nav-link" href="/products">PRODUCTS</a>
-                </li>
-                <li class="nav-item active" id="cd-link">
-                    <a class="nav-link" href="#">CBD</a>
-                </li>
-                <li class="nav-item active" id="cd-link">
-                    <a class="nav-link" href="#">SALVES</a>
-                </li>
-                <li class="nav-item active" id="cd-link">
-                    <a class="nav-link" href="#">SOAKS</a>
-                </li>
-                <li class="nav-item active" id="cd-link">
-                    <a class="nav-link" href="#">ABOUT</a>
-                </li>
-                <li class="nav-item active" id="cd-link">
-                    <a class="nav-link"  href="#">CONTACT</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+        </a>
+      {.end} 
+      </div>
+    </squarespace:query>
     <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
        {squarespace.main-content}
-    </main>
- 
-
-      
-      <!--Footer with open block field -->
-      <footer class="site-footer">
-        <squarespace:block-field id="footerBlocks" columns="12" />
-      </footer>
-
-    </div>
-
+    </main>     
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
     <squarespace:script src="shop.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
@@ -74,11 +33,5 @@
     <!-- other scripts, and footer code injection -->
     {squarespace-footers}
     <script>console.log({@|json-pretty})</script>
-    <script>console.log("hi")</script>
-    <script>
-    $('#jquery-button').click(function(){
-      alert("it works")
-    });
-    </script>
   </body>
 </html>

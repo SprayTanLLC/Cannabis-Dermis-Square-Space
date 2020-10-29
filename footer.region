@@ -1,0 +1,6 @@
+<!--Footer with open block field -->
+<footer class="site-footer">
+        <squarespace:block-field id="footerBlocks" columns="12" />
+</footer>
+
+</div>
