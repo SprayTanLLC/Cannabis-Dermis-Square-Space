@@ -8,12 +8,57 @@
     {squarespace-headers}
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
+  <div class="connect">
+        <div class="social-icons">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+        <p class="email-right align-middle">Hello@CannabisDermis@gmail.com<i class="fas fa-shopping-cart"></i></p>
+    </div>
+    <hr>
+    <!-- Navbar Sticky top -->
+    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-white p-4">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <img id="cd-logo" src={collection.mainImage.assetUrl}>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand mr-0" href="#"><img src="logo.png" alt=""></a>
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 canderm-nav">
+                <li class="nav-item active" id="cd-link">
+                    <a class="nav-link" href="/home">HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active" id="cd-link">
+                    <a class="nav-link" href="/shop">SHOP</a>
+                </li>
+                <li class="nav-item active" id="cd-link">
+                    <a class="nav-link" href="/products">PRODUCTS</a>
+                </li>
+                <li class="nav-item active" id="cd-link">
+                    <a class="nav-link" href="#">CBD</a>
+                </li>
+                <li class="nav-item active" id="cd-link">
+                    <a class="nav-link" href="#">SALVES</a>
+                </li>
+                <li class="nav-item active" id="cd-link">
+                    <a class="nav-link" href="#">SOAKS</a>
+                </li>
+                <li class="nav-item active" id="cd-link">
+                    <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item active" id="cd-link">
+                    <a class="nav-link"  href="#">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="site-container">
+
 
       <header class="site-header">
-        <!-- site navigation -->
-        <squarespace:navigation navigationId="siteNav" template="site-navigation" />
 
         <!-- site title or logo -->
         {.section website}
@@ -33,7 +78,7 @@
         <squarespace:block-field id="footerBlocks" columns="12" />
       </footer>
 
-    </div>
+
 
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
