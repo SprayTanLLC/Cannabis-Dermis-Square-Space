@@ -1,12 +1,12 @@
 <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
    <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
        {squarespace.main-content}
-    </main>
+  </main>
     <h1>Maybe</h1>
 
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
     <squarespace:script src="test.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
-    
+
   </body>
 </html>
