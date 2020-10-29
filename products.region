@@ -55,7 +55,7 @@
         </div>
     </nav>
       <!-- cms content injection point -->
-    <squarespace:query collection="Products">
+    <squarespace:query collection="products">
       <script>console.log({@|json-pretty})</script>
       <div class="container-fluid repeated-products">
      {.repeated section items}
