@@ -34,7 +34,7 @@
                     <a class="nav-link" href="/shop">SHOP</a>
                 </li>
                 <li class="nav-item active" id="cd-link">
-                    <a class="nav-link" href="/our-products">OUR PRODUCTS</a>
+                    <a class="nav-link" href="/products">PRODUCTS</a>
                 </li>
                 <li class="nav-item active" id="cd-link">
                     <a class="nav-link" href="#">CBD</a>
@@ -57,22 +57,7 @@
     <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
        {squarespace.main-content}
     </main>
-        <squarespace:query collection="products">
-      <script>console.log({@|json-pretty})</script>
-      <div class="container-fluid repeated-products">
-     {.repeated section items}
-      <a href="{fullUrl}">
-        <div class="row">
-            <div class="col-sm text-center">
-                <img src="{assetUrl}" class="img-fluid">
-                <p>{title}</p>
-                <p>$30.00</p>
-            </div>
-        </div>
-        </a>
-    {.end} 
-    </div>
-    </squarespace:query>
+ 
 
       
       <!--Footer with open block field -->

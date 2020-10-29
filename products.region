@@ -34,7 +34,7 @@
                     <a class="nav-link" href="/shop">SHOP</a>
                 </li>
                 <li class="nav-item active" id="cd-link">
-                    <a class="nav-link" href="/our-products">OUR PRODUCTS</a>
+                    <a class="nav-link" href="/products">PRODUCTS</a>
                 </li>
                 <li class="nav-item active" id="cd-link">
                     <a class="nav-link" href="#">CBD</a>
@@ -54,9 +54,9 @@
             </ul>
         </div>
     </nav>
-    <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
+  <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
        {squarespace.main-content}
-    </main>
+  </main>
 
 
 
@@ -65,8 +65,6 @@
       <footer class="site-footer">
         <squarespace:block-field id="footerBlocks" columns="12" />
       </footer>
-
-    </div>
 
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
