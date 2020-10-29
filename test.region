@@ -9,27 +9,7 @@
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
 
-  <div class="sqs-block product-block sqs-block-product" data-block-type="43" id="block-yui_3_17_2_1_1603931557443_5003"><div class="sqs-block-content" id="yui_3_17_2_1_1603932610194_110">
-    <div class="product-block  clear" data-product-type="1" id="yui_3_17_2_1_1603932610194_109">
-      <div class="image-container" id="yui_3_17_2_1_1603932610194_108">
-        <a href="/shop/p23is0sc7951hb3dch6qb528sicy0b" id="yui_3_17_2_1_1603932610194_107">
-        <img class="sqs-product-block-main-image loaded" data-src="https://images.squarespace-cdn.com/content/v1/5f9487af9bade20d8b10fccc/1603920519740-Q88STMKR0I8RFRZ9NJU4/ke17ZwdGBToddI8pDm48kNR4h5KMHygq0Qj6xtX05pcUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8PaoYXhp6HxIwZIk7-Mi3Tsic-L2IOPH3Dwrhl-Ne3Z2JTYrYl0ZyrXwLI1Xe4njMrEr2ibkUqF2NMtGZX5lCMqbhuOb0MAcXaQ6whlEkpec/photo-1558456381-61480e649f53.jpeg" data-image="https://images.squarespace-cdn.com/content/v1/5f9487af9bade20d8b10fccc/1603920519740-Q88STMKR0I8RFRZ9NJU4/ke17ZwdGBToddI8pDm48kNR4h5KMHygq0Qj6xtX05pcUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8PaoYXhp6HxIwZIk7-Mi3Tsic-L2IOPH3Dwrhl-Ne3Z2JTYrYl0ZyrXwLI1Xe4njMrEr2ibkUqF2NMtGZX5lCMqbhuOb0MAcXaQ6whlEkpec/photo-1558456381-61480e649f53.jpeg" data-image-dimensions="800x1067" data-image-focal-point="0.5,0.5" data-load="false" alt=" Salve  #1" style="" data-image-resolution="2500w" src="https://images.squarespace-cdn.com/content/v1/5f9487af9bade20d8b10fccc/1603920519740-Q88STMKR0I8RFRZ9NJU4/ke17ZwdGBToddI8pDm48kNR4h5KMHygq0Qj6xtX05pcUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8PaoYXhp6HxIwZIk7-Mi3Tsic-L2IOPH3Dwrhl-Ne3Z2JTYrYl0ZyrXwLI1Xe4njMrEr2ibkUqF2NMtGZX5lCMqbhuOb0MAcXaQ6whlEkpec/photo-1558456381-61480e649f53.jpeg?format=2500w">
-        <div class="sqs-product-mark-wrapper">   
-        </div>
-          </a>        
-        </div>
-        <div class="productDetails center">
-          <a href="/shop/p23is0sc7951hb3dch6qb528sicy0b" class="product-title"> Salve  #1</a>
-        <div class="product-price">
-        <span class="sqs-money-native">30.00</span>
-        </div>
-        <div class="sqs-add-to-cart-button-wrapper" data-animation-role="button" style="visibility: visible;">
-        <div class="sqs-add-to-cart-button sqs-suppress-edit-mode sqs-editable-button " role="button" tabindex="0" data-collection-id="5f9889baa913ed540332a63d" data-item-id="5f9889d4b76fd7740a29cd24" data-product-type="1" data-use-custom-label="true" data-original-label="Add To Cart" id="yui_3_17_2_1_1603932610194_151">
-        <div class="sqs-add-to-cart-button-inner">Add To Cart</div>
-        </div>
-      </div>
-    </div>
-  </div>
+
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
     <squarespace:script src="test.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
