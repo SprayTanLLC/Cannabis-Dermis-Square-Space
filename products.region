@@ -55,27 +55,25 @@
         </div>
     </nav>
       <!-- cms content injection point -->
-      <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
-       {squarespace.main-content}
-      </main>
-
-
-<div class="container-fluid repeated-products">
+    <squarespace:query collection="Products">
+      <script>console.log({@|json-pretty})</script>
+      <div class="container-fluid repeated-products">
      {.repeated section items}
       <a href="{fullUrl}">
         <div class="row">
             <div class="col-sm text-center">
                 <img src="{assetUrl}" class="img-fluid">
                 <p>{title}</p>
-                <p>{priceMoney}</p>
+                <p>$30.00</p>
             </div>
         </div>
         </a>
     {.end} 
     </div>
-   
+    </squarespace:query>
+
+
 <script>document.querySelector('.product-block .product-block').classList.add('is-first-product-block');</script>
-</div></div>
       <!--Footer with open block field -->
       <footer class="site-footer">
         <squarespace:block-field id="footerBlocks" columns="12" />
