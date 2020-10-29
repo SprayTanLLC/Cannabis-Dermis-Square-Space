@@ -54,10 +54,24 @@
             </ul>
         </div>
     </nav>
-      <!-- cms content injection point -->
-      <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
+    <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
        {squarespace.main-content}
       </main>
+    <div class="container-fluid repeated-products">
+     {.repeated section items}
+      <a href="{fullUrl}">
+        <div class="row">
+            <div class="col-sm text-center">
+                <img src="{assetUrl}" class="img-fluid">
+                <p>{title}</p>
+                <p>$30.00</p>
+            </div>
+        </div>
+        </a>
+    {.end} 
+    </div>
+      <!-- cms content injection point -->
+      
       <!--Footer with open block field -->
       <footer class="site-footer">
         <squarespace:block-field id="footerBlocks" columns="12" />
