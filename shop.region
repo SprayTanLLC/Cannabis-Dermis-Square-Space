@@ -24,9 +24,6 @@
       </header>
 
       <!-- cms content injection point -->
-   <h1>hello</h1>
-
-
       <!--Footer with open block field -->
       <footer class="site-footer">
         <squarespace:block-field id="footerBlocks" columns="12" />
@@ -36,7 +33,7 @@
 
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
-
+<script>console.log({@|json-pretty})</script>
     <!-- other scripts, and footer code injection -->
     {squarespace-footers}
 
