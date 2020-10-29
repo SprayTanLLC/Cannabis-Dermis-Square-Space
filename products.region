@@ -54,9 +54,6 @@
             </ul>
         </div>
     </nav>
-    <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
-       {squarespace.main-content}
-    </main>
       <!-- cms content injection point -->
     <squarespace:query collection="products">
       <script>console.log({@|json-pretty})</script>
