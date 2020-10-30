@@ -51,10 +51,8 @@ hr {
 
 /* Carousel Image Items */
 .slider .item {
-    height: 400px;
-    
+    height: 400px;  
 }
-
 .asi {
     height: 10rem;
     color: white;
@@ -64,22 +62,20 @@ hr {
     width: 100%;
     text-align: center;
 }
-
 .four-pictures div {
     padding: 0;
 }
 .four-pictures img {
     width: 100%;
     height: auto;
-
+    overflow: hidden;
 }
 .inner {
     overflow: hidden;
 }
 .inner img {
-    transition: all 1s ease-in-out;
+    transition: all .4s ease-in-out;
 }
-
 .inner:hover img {
     transform: scale(1.25);   
 }
