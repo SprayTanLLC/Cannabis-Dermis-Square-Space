@@ -2,7 +2,22 @@
    <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
        {squarespace.main-content}
   </main>
-
+  <squarespace:query collection="products">
+      <script>console.log({@|json-pretty})</script>
+      <div class="container-fluid repeated-products">
+     {.repeated section items}
+      <a href="{fullUrl}">
+        <div class="row">
+            <div class="col-sm text-center">
+                <img src="{assetUrl}" class="img-fluid">
+                <p>{title}</p>
+                <p>${variants.0.priceMoney.value}</p>
+            </div>
+        </div>
+        </a>
+    {.end} 
+    </div>
+    </squarespace:query>
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
     <squarespace:script src="test.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />

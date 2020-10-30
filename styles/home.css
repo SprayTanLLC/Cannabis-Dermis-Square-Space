@@ -72,6 +72,7 @@ hr {
 }
 .inner {
     overflow: hidden;
+    border: 1px solid white;
 }
 .inner img {
     transition: all .4s ease-in-out;
