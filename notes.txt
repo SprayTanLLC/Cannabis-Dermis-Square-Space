@@ -78,3 +78,59 @@ CODE BLOCK FOR PRODUCT W/ ADD TO CART BUTTON:
       <main class="content-container" role="main" data-content-field="main-content">
        {squarespace.main-content}
       </main>
+
+
+CUSTOM CSS (REMOVED):
+    html, body {
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+.connect {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 0;
+    color: slategray;
+    font-family: 'Lato', sans-serif;
+}
+
+.social-icons {
+    color: black;
+    font-size: 1.75rem;
+}
+
+.email-right {
+    margin: 0;
+    padding: 0;
+    color: black;
+    margin-right: 2rem;
+}
+.canderm-nav {
+    width: 100%;
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    justify-content: space-evenly;
+}
+.candern-nav {
+    justify-content: space-between;
+}
+.navbar-brand img {
+    width: 10rem;
+    height: auto;
+}
+a.site-title-link {
+  display: none !important;
+}
+.site-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
