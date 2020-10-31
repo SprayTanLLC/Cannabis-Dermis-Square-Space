@@ -61,8 +61,5 @@
     <squarespace:script src="home.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
-    <!-- other scripts, and footer code injection -->
-    {squarespace-footers}
+
     <script>console.log({@|json-pretty})</script>
-  </body>
-</html>
