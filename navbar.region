@@ -15,7 +15,7 @@
             aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <img id="cd-logo" src={collection.mainImage.assetUrl}>
+        <img id="cd-logo" src={website.logoImageUrl}>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <a class="navbar-brand mr-0" href="#"><img src="logo.png" alt=""></a>
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0 canderm-nav">
@@ -29,19 +29,19 @@
                     <a class="nav-link" href="/products">PRODUCTS</a>
                 </li>
                 <li class="nav-item active" id="cd-link">
-                    <a class="nav-link" href="#">FAQ'S</a>
+                    <a class="nav-link" href="/salves">SALVES</a>
                 </li>
                 <li class="nav-item active" id="cd-link">
-                    <a class="nav-link" href="#">SALVES</a>
+                    <a class="nav-link" href="/soaks">SOAKS</a>
                 </li>
                 <li class="nav-item active" id="cd-link">
-                    <a class="nav-link" href="#">SOAKS</a>
+                    <a class="nav-link" href="/parrafin-wax-concentrate">Paraffin Wax Concentrate</a>
                 </li>
                 <li class="nav-item active" id="cd-link">
-                    <a class="nav-link" href="#">ABOUT</a>
+                    <a class="nav-link" href="/lotion-bars">Lotion Bars</a>
                 </li>
                 <li class="nav-item active" id="cd-link">
-                    <a class="nav-link"  href="#">CONTACT</a>
+                    <a class="nav-link"  href="/about">ABOUT</a>
                 </li>
             </ul>
         </div>

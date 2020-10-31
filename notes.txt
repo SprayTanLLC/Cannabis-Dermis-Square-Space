@@ -1,7 +1,19 @@
 
+ SHOPPING CART HEADER: 
+ <div id="yui_3_17_2_1_1604179003467_317" class="sqs-pill-shopping-cart-content dark" data-test="continue-to-cart"><div class="icon"></div>
+
+<div class="details">
+  <span class="total-quantity">2</span>
+  <span class="suffix">items</span>
+</div>
+
+<span class="subtotal">
+  <span class="price">$65</span>
+</span></div>
+
  <script>console.log({@|json-pretty})</script>
 
- 
+
 <div class="container-fluid repeated-products">
      {.repeated section items}
       <a href="{fullUrl}">
