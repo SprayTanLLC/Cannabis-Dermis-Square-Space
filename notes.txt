@@ -1,3 +1,4 @@
+squarespace-server https://ruby-triangle-mnsa.squarespace.com/template.git --auth
 
  SHOPPING CART HEADER: 
  <div id="yui_3_17_2_1_1604179003467_317" class="sqs-pill-shopping-cart-content dark" data-test="continue-to-cart"><div class="icon"></div>
