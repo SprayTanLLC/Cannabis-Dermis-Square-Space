@@ -1,9 +1,9 @@
  <div class="connect">
         <div class="social-icons">
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-pinterest"></i>
-            <i class="fab fa-instagram"></i>
+            <a href="https://twitter.com/home" target="blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com" target="blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://pinterest.com" target="blank"><i class="fab fa-pinterest"></i></a>
+            <a href="https://instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
         </div>
         <p class="email-right align-middle">Hello@CannabisDermis@gmail.com<i class="fas fa-shopping-cart"></i></p>
   </div>
