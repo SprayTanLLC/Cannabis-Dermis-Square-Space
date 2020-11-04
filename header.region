@@ -11,3 +11,6 @@
    <!-- include system scripts, page meta, and header code injection -->
    {squarespace-headers}
  </head>
+ <header class="site-header">
+        <squarespace:navigation navigationId="siteNav" template="site-navigation" />
+ </header>
