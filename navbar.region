@@ -47,8 +47,4 @@
         </div>
     </nav>
 
-    <!-- combo and minify scripts when not logged in -->
-    <squarespace:script src="home.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
-    <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
-
-
+    

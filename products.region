@@ -72,17 +72,3 @@
        {squarespace.main-content}
       </main>
 
-      <!--Footer with open block field -->
-      <footer class="site-footer">
-        <squarespace:block-field id="footerBlocks" columns="12" />
-      </footer>
-
-
-
-    <!-- combo and minify scripts when not logged in -->
-    <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
-    <squarespace:script src="home.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
-
-    <!-- other scripts, and footer code injection -->
-    {squarespace-footers}
- 

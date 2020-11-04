@@ -52,13 +52,4 @@
             </div>
         </div>
     </div>
-      <!--Footer with open block field -->
-      <footer class="site-footer">
-        <squarespace:block-field id="footerBlocks" columns="12" />
-      </footer>
-    </div>
-    <!-- combo and minify scripts when not logged in -->
-    <squarespace:script src="home.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
-    <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
-
-    {squarespace-footers}
+      
