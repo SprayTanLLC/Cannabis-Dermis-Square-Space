@@ -1,3 +1,5 @@
+<squarespace:navigation navigationId="siteNav" template="site-navigation" />
+
 <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
  
   <squarespace:query collection="products">
