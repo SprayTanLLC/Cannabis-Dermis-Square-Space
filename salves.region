@@ -1,7 +1,6 @@
 <!-- cms content injection point -->
 <div class="salves">
     {squarespace.main-content}
-    gh
 </div>
 
 
