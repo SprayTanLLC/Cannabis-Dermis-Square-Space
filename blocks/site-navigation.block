@@ -18,7 +18,6 @@
     <a class="navbar-brand mr-0" href="#"><img src="logo.png" alt=""></a>
     <ul class="site-navigation-list navbar-nav ml-auto mt-2 mt-lg-0 canderm-nav">
       {.repeated section items}
-      <script>console.log({@|json-pretty})</script>
         <li class="site-navigation-item {.section active} active-link{.end} nav-item active">
           <!-- collection link -->
           {.section collection}
