@@ -1,3 +1,5 @@
+github test
+
 squarespace-server https://ruby-triangle-mnsa.squarespace.com/template.git --auth
 
  SHOPPING CART HEADER: 
