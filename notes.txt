@@ -1,5 +1,5 @@
 to push code to github repo: git push -u https://github.com/SprayTanLLC/https-ruby-triangle-mnsa.squarespace.com-template.git
-
+to push code to squarespace repo: git push -u https://ruby-triangle-mnsa.squarespace.com/template.git
 
 squarespace-server https://ruby-triangle-mnsa.squarespace.com/template.git --auth
 
