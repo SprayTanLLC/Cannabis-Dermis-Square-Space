@@ -25,10 +25,10 @@
 
 }());
 
-let testCart = document.getElementsByClassName("absolute-cart-box");
+
+
 const changeCart = () => {
-    testCart.style.height = "20rem";
+    let newCart = document.getElementsByClassName("sqs-pill-shopping-cart-content")[0];
+    newCart.style.boxSizing = "content-box";
 }
-
 changeCart();
-
