@@ -25,7 +25,7 @@
 
 }());
 
-let testCart = document.getElementsByClassName("sqs-pill-shopping-cart-content");
+let testCart = document.getElementsByClassName("absolute-cart-box");
 const changeCart = () => {
     testCart.style.height = "20rem";
 }

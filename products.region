@@ -4,7 +4,7 @@
       {squarespace.main-content}
 </main>
 
-<script>showCart = "true"</script>
- <script>console.log({@|json-pretty})</script>
+
+
  <squarespace:script src="products.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
