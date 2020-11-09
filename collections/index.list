@@ -2,7 +2,7 @@
     <div class="container-fluid asi d-flex align-items-center justify-content-center mb-4">
             <div class="row">
                 <div class="col-sm">
-                    <h1>SHOP</h1>
+                    <h1 class="light-font-weight">SHOP</h1>
                 </div>
             </div>
     </div>

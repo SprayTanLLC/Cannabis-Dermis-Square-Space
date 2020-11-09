@@ -27,7 +27,7 @@
               {.repeated section items}
                 <li>
                   {.section collection}
-                    <a href="{fullUrl}">{navigationTitle}</a>
+                    <a class="light-font-weight" href="{fullUrl}">{navigationTitle}</a>
                   {.end}
                 </li>
               {.end}
