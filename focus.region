@@ -1,10 +1,37 @@
 <div class="container-fluid asi d-flex align-items-center justify-content-center">
         <div class="row">
             <div class="col-sm">
-                <h1>{squarespace.main-content}</h1>
+                <h1 class="light-font-weight">{squarespace.main-content}</h1>
             </div>
         </div>
 </div>
+<squarespace:query collection="products">
+      <script>console.log({@|json-pretty})</script>
+      <div class="container-fluid repeated-products">
+      {.repeated section items}
+        <a href="{fullUrl}">
+          <div class="row">
+              <div class="col-sm text-center">
+                  <div class="image-plus-button">
+                    <div class="product-image-container">
+                      <img src="{assetUrl}" class="img-fluid">
+                    </div>
+                    <div class="pop-up-button d-flex">
+                      <p class="add-to-cart">ADD TO CART</p>
+                    </div>
+                  </div>
+                  <div class="product-title">
+                    <p>{title}</p>
+                  </div>
+                  <div class="product-price">
+                    <p>${variants.0.priceMoney.value}</p>
+                  </div>
+              </div>
+          </div>
+        </a>
+    {.end} 
+    </div>
+    </squarespace:query>
 <!-- cms injection point -->
 <main class="content-container" role="main" data-content-field="main-content" style="width:100%">      
 </main>
