@@ -1,9 +1,10 @@
-
-<!-- cms content injection point -->
-<main class="content-container" role="main" data-content-field="main-content">
-      {squarespace.main-content}
-</main>
-
+<div class="container-fluid asi d-flex align-items-center justify-content-center">
+        <div class="row">
+            <div class="col-sm">
+                <h1 class="light-font-weight">PRODUCTS</h1>
+            </div>
+        </div>
+</div>
 
 
  <squarespace:script src="products.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />

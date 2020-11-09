@@ -7,14 +7,14 @@
 </div>
 <squarespace:query collection="products">
       <script>console.log({@|json-pretty})</script>
-      <div class="container-fluid repeated-products">
-      {.repeated section items}
-        <a href="{fullUrl}">
-          <div class="row">
-              <div class="col-sm text-center">
+      <div class="container-fluid repeated-products mt-4">
+      <div class="row">
+        {.repeated section items}
+         <div class="col-sm-12 col-md-6 col-lg-3 text-center">
+            <a href="{fullUrl}">
                   <div class="image-plus-button">
                     <div class="product-image-container">
-                      <img src="{assetUrl}" class="img-fluid">
+                      <img class="img-fluid" src="{assetUrl}">
                     </div>
                     <div class="pop-up-button d-flex">
                       <p class="add-to-cart">ADD TO CART</p>
@@ -26,10 +26,11 @@
                   <div class="product-price">
                     <p>${variants.0.priceMoney.value}</p>
                   </div>
+                  </a>
               </div>
-          </div>
-        </a>
+            
     {.end} 
+    </div>
     </div>
     </squarespace:query>
 <!-- cms injection point -->
