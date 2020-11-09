@@ -1,0 +1,9 @@
+<h1>Product Types Available</h1>
+<script>console.log({@|json-pretty})</script>
+<ul>
+    {.section collection}
+        {.repeated section collections}
+            <li><a href="{fullUrl}">{title}</a></li>
+        {.end}
+    {.end}
+</ul>
