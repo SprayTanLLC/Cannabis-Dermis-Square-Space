@@ -22,7 +22,7 @@
 
          <!-- check for folder -->
         {.folder?}
-          <a>{collection.navigationTitle}</a>
+          <a href="{collection.fullUrl}">{collection.navigationTitle}</a>
           <ul>
             {.repeated section items}
               <li>
