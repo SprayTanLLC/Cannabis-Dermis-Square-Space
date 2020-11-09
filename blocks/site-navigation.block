@@ -10,8 +10,8 @@
 <hr>
 <nav class="site-navigation navbar sticky-top navbar-expand-md navbar-light bg-white p-4">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-              aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
   </button>
   <img id="cd-logo" src={website.logoImageUrl}>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -19,7 +19,6 @@
     <ul class="site-navigation-list navbar-nav ml-auto mt-2 mt-lg-0 canderm-nav">
       {.repeated section items}
         <li class="site-navigation-item {.section active} active-link{.end} nav-item active">
-
          <!-- check for folder -->
         {.folder?}
           <div class="dropdown-nav">
@@ -40,16 +39,13 @@
             <a href="{fullUrl}">{navigationTitle}</a>
           {.end}
       {.end}
-      
           <!-- external link -->
           {.section externalLink}
             <a href="{url}"{.section newWindow} target="_blank"{.end}>
               {title}
             </a>
           {.end}
-
         </li>
-
       {.end}
     </ul>
   </div>
