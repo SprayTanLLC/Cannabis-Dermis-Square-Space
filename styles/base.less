@@ -73,11 +73,21 @@ body {
   display: none;
 }
 .site-navigation-item:hover ul {
-  display: block;
+  display: flex;
   list-style: none;
   position: absolute;
+  left: 0;
+  right: 0;
   background-color: white;
   width: 100%;
+  border: 1px solid gray;
+  height: 5rem;
+}
+.site-navigation-item li {
+  display: inline-block;
+}
+.dropdown-nav ul {
+  justify-content: space-around;
 }
 
 .site-title-heading {

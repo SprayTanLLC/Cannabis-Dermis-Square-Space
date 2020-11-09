@@ -22,16 +22,18 @@
 
          <!-- check for folder -->
         {.folder?}
-          <a href="{collection.fullUrl}">{collection.navigationTitle}</a>
-          <ul>
-            {.repeated section items}
-              <li>
-                {.section collection}
-                  <a href="{fullUrl}">{navigationTitle}</a>
-                {.end}
-              </li>
-            {.end}
-          </ul>
+          <div class="dropdown-nav">
+            <a href="{collection.fullUrl}">{collection.navigationTitle}</a>
+            <ul>
+              {.repeated section items}
+                <li>
+                  {.section collection}
+                    <a href="{fullUrl}">{navigationTitle}</a>
+                  {.end}
+                </li>
+              {.end}
+            </ul>
+          <div>
         {.or}
            <!-- collection link -->
           {.section collection}
