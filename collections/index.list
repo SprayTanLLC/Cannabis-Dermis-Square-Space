@@ -1,9 +1,13 @@
-<h1>Product Types Available</h1>
-<script>console.log({@|json-pretty})</script>
-<ul>
-    {.section collection}
-        {.repeated section collections}
-            <li><a href="{fullUrl}">{title}</a></li>
-        {.end}
+
+{.section collection}
+    {.repeated section collections}
+        <div class="container-fluid asi d-flex align-items-center justify-content-center">
+            <div class="row">
+                <div class="col-sm">
+                    <h1>{title}</h1>
+                </div>
+            </div>
+        </div>
     {.end}
-</ul>
+{.end}
+
