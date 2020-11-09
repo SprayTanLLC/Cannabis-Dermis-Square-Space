@@ -28,7 +28,9 @@
 
 
 const changeCart = () => {
-    let newCart = document.getElementsByClassName("sqs-pill-shopping-cart-content")[0];
-    newCart.style.boxSizing = "content-box";
+    // let newCart = document.getElementsByClassName("sqs-pill-shopping-cart-content")[0];
+    // newCart.style.boxSizing = "content-box";
+    alert("you made it");
 }
 changeCart();
+
