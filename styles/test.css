@@ -1,6 +1,7 @@
 .booty {
    box-sizing: border-box;
 }
+
 .repeated-products {
     display: flex;
     align-items: center;
