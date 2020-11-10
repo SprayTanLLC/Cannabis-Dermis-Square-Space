@@ -1,38 +1,6 @@
-<div class="container-fluid asi d-flex align-items-center justify-content-center">
-        <div class="row">
-            <div class="col-sm">
-                <h1 class="light-font-weight">PRODUCTS</h1>
-            </div>
-        </div>
-</div>
-<squarespace:query collection="products">
-      <script>console.log({@|json-pretty})</script>
-      <div class="container-fluid repeated-products mt-4">
-      <div class="row">
-        {.repeated section items}
-         <div class="col-sm-12 col-md-6 col-lg-3 text-center">
-            <a href="{fullUrl}">
-                  <div class="image-plus-button">
-                    <div class="product-image-container">
-                      <img class="img-fluid" src="{assetUrl}">
-                    </div>
-                    <div class="pop-up-button d-flex">
-                      <p class="add-to-cart">ADD TO CART</p>
-                    </div>
-                  </div>
-                  <div class="product-title">
-                    <p>{title}</p>
-                  </div>
-                  <div class="product-price">
-                    <p>${variants.0.priceMoney.value}</p>
-                  </div>
-                  </a>
-              </div>
-            
-    {.end} 
-    </div>
-    </div>
-    </squarespace:query>
+<main class="content-container" role="main" data-content-field="main-content">
+       {squarespace.main-content}
+</main>
 
  <squarespace:script src="products.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
