@@ -2,5 +2,6 @@
        {squarespace.main-content}
 </main>
 
+
  <squarespace:script src="products.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 

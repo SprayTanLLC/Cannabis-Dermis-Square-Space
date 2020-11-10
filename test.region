@@ -1,8 +1,43 @@
-<body id="{squarespace.page-id}" class="{squarespace.page-classes}">
-   <main class="content-container" role="main" data-content-field="main-content" style="width:100%">
+{#  add to car button  }
+<div class="booty">
+<main class="content-container" role="main" data-content-field="main-content">
        {squarespace.main-content}
-  </main>
+        <script>console.log({squarespace.main-content|json-pretty})</script>
+</main>
 
 <div class="sqs-add-to-cart-button sqs-suppress-edit-mode sqs-editable-button " role="button" tabindex="0" data-collection-id="5f9a52d43368d735c0c5f20c" data-item-id="5fa9b7a5b47b7035e1541218" data-product-type="1" data-use-custom-label="false" data-original-label="Add To Cart" id="yui_3_17_2_1_1605042137103_110">
     <div class="sqs-add-to-cart-button-inner">Add To Cart</div>
+</div>
+
+
+<squarespace:query collection="products">
+      <script>console.log({@|json-pretty})</script>
+      <div class="container-fluid repeated-products mt-4">
+      <div class="row">
+        {.repeated section items}
+         <div class="col-sm-12 col-md-6 col-lg-3 text-center">
+            <a>
+                  <div class="image-plus-button">
+                    <div class="product-image-container">
+                      <img class="img-fluid" src="{assetUrl}">
+                    </div>
+                    <div class="sqs-add-to-cart-button pop-up-button" role="button" tabindex="1" data-collection-id="5f9a52d43368d735c0c5f20c" data-item-id="{id}" data-product-type="1" data-use-custom-label="false" data-original-label="Add To Cart" id="yui_3_17_2_1_1605042137103_110">
+                    <div class="sqs-add-to-cart-button-inner" style="transition: opacity 0.2s ease-out 0s, visibility 0.2s ease-out 0s, transform 0.2s ease-out 0s; opacity: 1; visibility: visible; transform: scale(1);"><strong>Add To Cart</strong></div>
+                    </div>
+                  </div>
+                  <div class="product-title">
+                    <p>{title}</p>
+                  </div>
+                  <div class="product-price">
+                    <p>${variants.0.priceMoney.value}</p>
+                  </div>
+                  </a>
+              </div>
+            
+    {.end} 
+    </div>
+    </div>
+  </squarespace:query>
+
+<script>console.log({@|json-pretty})</script>
 </div>
