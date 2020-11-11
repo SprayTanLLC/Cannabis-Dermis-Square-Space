@@ -27,5 +27,9 @@
     </div>
 </squarespace:query>
 
+<main class="content-container" role="main" data-content-field="main-content">
+       {squarespace.main-content}
+</main>
+
  <squarespace:script src="products.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
