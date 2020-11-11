@@ -26,3 +26,17 @@
 }());
 
 
+
+const toggleProductRegion = () => {
+    document.getElementbyId("remove-product-region").style.display = "none";
+}
+
+const anchorWrapper = document.getElementById("anchor-wrapper");
+console.log(anchorWrapper);
+
+anchorWrapper.addEventListener("click", toggleProductRegion);
+
+// if url is /products
+
+
+console.log(window.location.pathname);
