@@ -13,7 +13,11 @@
           aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
   </button>
-  <img id="cd-logo" src={website.logoImageUrl}>
+  <div id="cd-logo">
+    <a href="/">
+    <img src={website.logoImageUrl}>
+    </a>
+  </div>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
     <a class="navbar-brand mr-0" href="#"><img src="logo.png" alt=""></a>
     <ul class="site-navigation-list navbar-nav ml-auto mt-2 mt-lg-0 canderm-nav">
