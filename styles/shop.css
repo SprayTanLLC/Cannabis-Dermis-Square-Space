@@ -26,6 +26,10 @@
     transition: transform 250ms;
     vertical-align: bottom;
 }
+.pop-up-button p {
+    padding-top: 12px;
+    font-size: 1rem;
+}
 .add-to-cart {
     margin: auto;
     color: white;
