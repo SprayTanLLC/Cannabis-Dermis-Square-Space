@@ -18,6 +18,7 @@ squarespace-server https://ruby-triangle-mnsa.squarespace.com/template.git --aut
  <script>console.log({@|json-pretty})</script>
 
 Single product page: <a href="{fullUrl}">
+item price: <p>${variants.0.priceMoney.value}</p>
 
 <div class="container-fluid repeated-products">
      {.repeated section items}
