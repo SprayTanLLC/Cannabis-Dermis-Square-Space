@@ -1,8 +1,17 @@
+.content-container{
+   text-align: center;
+   font-family: 'Montserrat', sans-serif;
+}
 .item-box img{
     width: 20%;
     height: auto;
 }
 
-.content-container {
-    
+.product-list-not-linked {
+  padding-top: 3rem;
 }
+
+#productDetails {
+    padding-right: 3rem;
+}
+

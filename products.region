@@ -1,16 +1,14 @@
 <div class="container-fluid asi d-flex align-items-center justify-content-center">
         <div class="row">
             <div class="col-sm">
-              {.section item}
-                <h1 class="light-font-weight">{title}</h1>
-              {.end}
+                <h1 class="light-font-weight">{item.title}</h1>
             </div>
         </div>
 </div>
 
 
 
-<main class="content-container" role="main" data-content-field="main-content">
+<main class="content-container product-list-not-linked" role="main" data-content-field="main-content">
        {squarespace.main-content}
 </main>
 
