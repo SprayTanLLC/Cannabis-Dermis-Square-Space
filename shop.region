@@ -1,22 +1,38 @@
-
-<body id="{squarespace.page-id}" class="{squarespace.page-classes}">
- 
-  <squarespace:query collection="products">
-      <script>console.log({@|json-pretty})</script>
-      <div class="container-fluid repeated-products">
-     {.repeated section items}
-      <a href="{fullUrl}">
+<div class="container-fluid asi d-flex align-items-center justify-content-center">
         <div class="row">
-            <div class="col-sm text-center">
-                <img src="{assetUrl}" class="img-fluid">
-                <p>{title}</p>
-                <p>${variants.0.priceMoney.value}</p>
+            <div class="col-sm">
+                <h1 class="light-font-weight">SHOP</h1>
             </div>
         </div>
-        </a>
+</div>
+<squarespace:query collection="products">
+      <div class="container-fluid repeated-products mt-4">
+      <div class="row">
+        {.repeated section items}
+         <div class="col-sm-12 col-md-6 col-lg-6 text-center">
+            <a>
+                  <div class="image-plus-button">
+                    <div class="product-image-container">
+                      <img class="img-fluid" src="{assetUrl}">
+                    </div>
+                    <div class="sqs-add-to-cart-button pop-up-button" role="button" tabindex="1" data-collection-id="5f9a52d43368d735c0c5f20c" data-item-id="{id}" data-product-type="1" data-use-custom-label="false" data-original-label="Add To Cart" id="yui_3_17_2_1_1605042137103_110">
+                    <div class="sqs-add-to-cart-button-inner add-to-cart" style="transition: opacity 0.2s ease-out 0s, visibility 0.2s ease-out 0s, transform 0.2s ease-out 0s; opacity: 1; visibility: visible; transform: scale(1);"><strong><p>Add To Cart</p></strong></div>
+                    </div>
+                  </div>
+                  <div class="product-title">
+                    <p>{title}</p>
+                  </div>
+                  <div class="product-price">
+                    <p>${variants.0.priceMoney.value}</p>
+                  </div>
+                  </a>
+              </div>
+            
     {.end} 
     </div>
-    </squarespace:query>
+    </div>
+</squarespace:query>
+
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
     <squarespace:script src="test.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />

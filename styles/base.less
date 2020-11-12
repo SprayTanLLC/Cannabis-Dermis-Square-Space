@@ -2,8 +2,6 @@
 /* CSS pre-processing by {less}. http://lesscss.org/
 ***************************************************/
 
-
-
 /* General syles
 ***************************************************/
 
@@ -14,6 +12,13 @@ body {
     sans-serif;
   font-size: 100%;
   font-weight: normal;
+}
+.sqs-pill-shopping-cart-content {
+  height: 3rem;
+}
+.sqs-add-to-cart-button-inner p {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
 .site-container {
@@ -41,6 +46,7 @@ body {
 }
 
 .site-navigation { 
+  position: relative;
 }
 
 .site-navigation-list {
@@ -68,6 +74,34 @@ body {
 
 }
 
+.site-navigation-item ul {
+  display: none;
+}
+.site-navigation-item:hover ul {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: white;
+  width: 100%;
+  border: 1px solid gray;
+  height: 5rem;
+}
+.site-navigation-item li {
+  display: inline-block;
+}
+.dropdown-nav ul {
+  justify-content: space-around;
+}
+.dropdown-nav ul li a {
+  align-items: center;
+}
+.dropdown-nav ul li {
+  align-items: center;
+  display: flex;
+}
+
 .site-title-heading {
 
   .site-title-link {
@@ -85,7 +119,9 @@ body {
   margin-bottom: 4vw;
 }
 
-
+.light-font-weight {
+  font-family: 'Montserrat', sans-serif;
+}
 
 /* Homepage
 ***************************************************/

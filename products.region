@@ -1,6 +1,16 @@
+<div class="container-fluid asi d-flex align-items-center justify-content-center">
+        <div class="row">
+            <div class="col-sm">
+                <h1 class="light-font-weight">{item.title}</h1>
+            </div>
+        </div>
+</div>
 
-      <!-- cms content injection point -->
-      <main class="content-container" role="main" data-content-field="main-content">
+
+
+<main class="content-container product-list-not-linked" role="main" data-content-field="main-content">
        {squarespace.main-content}
-      </main>
+</main>
+
+ <squarespace:script src="products.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 

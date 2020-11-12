@@ -32,8 +32,17 @@
 }
 
 #cd-logo {
-  margin: 0 auto;
-  padding: 0;
+  border-radius: 5px;
   width: 10%;
-  height: auto;
 }
+
+#cd-logo img {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: auto; 
+}
+
+.dropdown-nav li {
+    color: red;
+  }
