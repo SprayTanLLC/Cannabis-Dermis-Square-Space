@@ -5,7 +5,7 @@
             </div>
         </div>
 </div>
-<div id="remove-product-region" onclick="this.remove()">
+<div id="remove-product-region">
 <squarespace:query collection="products">
       <div class="container-fluid repeated-products mt-4">
       <div class="row">
